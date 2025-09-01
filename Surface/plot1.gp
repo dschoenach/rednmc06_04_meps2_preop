@@ -1,7 +1,7 @@
 set terminal png
 set output "fc_00000000_00000000_ALL_ALL_VI_0_thresholds.1.png"
 set datafile missing "-99"
-set title "Frequency  for Visibility (m)\n   Selection: ALL    689 stations\n  Period: 20250702-20250703\n  Used {00,12} + 00 01 ... 36" 
+set title "Frequency  for Visibility (m)\n   Selection: ALL    697 stations\n  Period: 20250702-20250720\n  Used {00,12} + 00 01 ... 36" 
 
 set style line 1 lt 0 lw 1 pt 5 # use black thin lines
 set style line 2 lt 8 lw 1 pt 1 # use black thicker lines
@@ -14,4 +14,4 @@ set logscale x
  set arrow  2 from  5000.00000,graph 0.05 to  5000.00000,graph 0.01 lt -1 lw 2 
  set arrow  3 from  10000.0000,graph 0.05 to  10000.0000,graph 0.01 lt -1 lw 2 
  set arrow  4 from  20000.0000,graph 0.05 to  20000.0000,graph 0.01 lt -1 lw 2
- plot 'c_00000000_00000000_ALL_ALL_VI_0_rednmc06.scores2' using 2:13 title 'OBS' with linespoints lt 3 lw 2 pt 7,'c_00000000_00000000_ALL_ALL_VI_0_rednmc06.scores2' using 2:14 title 'rednmc06' with linespoints lt 1 lw 2 pt 7,'c_00000000_00000000_ALL_ALL_VI_0_rednmc04.scores2' using 2:14 title 'rednmc04' with linespoints lt 2 lw 2 pt 7
+ plot 'c_00000000_00000000_ALL_ALL_VI_0_rednmc06.scores2' using 2:13 title 'OBS' with linespoints lt 3 lw 2 pt 7,'c_00000000_00000000_ALL_ALL_VI_0_rednmc06.scores2' using 2:14 title 'rednmc06' with linespoints lt 1 lw 2 pt 7,'c_00000000_00000000_ALL_ALL_VI_0_rednmc06_t2h2.scores2' using 2:14 title 'rednmc06_t2h2' with linespoints lt 2 lw 2 pt 7
